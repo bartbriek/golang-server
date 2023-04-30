@@ -13,16 +13,19 @@ COPY go.mod ./
 
 # Install Go modules
 RUN go mod download
-RUN go get github.com/bartbriek/golang-server/routes
+
+# Environment variables
+ENV GOPATH /golang-server/routes
 
 # Application
-COPY *.go ./
+COPY main.go ./
+COPY routes/ routes/
 
 # Build the binary
-RUN CGO_ENABLED=0 GOOS=linux go build -o /golang-server
+RUN go build -o /golang-server
 
 # Expose port to host
 EXPOSE 3333
 
 # Run application
-CMD [ "/main.go" ]
+CMD [ "/golang-server" ]

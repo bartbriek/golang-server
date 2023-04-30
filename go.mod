@@ -1,3 +1,3 @@
-module github.com/bartbriek/golang-server
+module golang-server
 
 go 1.20

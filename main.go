@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	routes "github.com/bartbriek/golang-server/routes"
+	routes "golang-server/routes"
 )
 
 func main() {
