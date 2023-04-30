@@ -3,9 +3,11 @@ This project is a hobby project in order to learn Go in combination with api des
 
 ### Steps:
 - [X] Create API design
-- [ ] Create working server
+- [X] Create working server
+- [X] Create working docker container
+- [ ] Implement all endpoints and return json
 - [ ] Implement security headers
-- [ ] Create working database docker container
+- [ ] Create working database docker container setup
 - [ ] Rewrite in memory database (map) to database
 - [ ] Create API gateway
 - [ ] Working situation from API gateway to EC2 instance in AWS. 
