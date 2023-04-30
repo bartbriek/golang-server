@@ -2,7 +2,7 @@
 This project is a hobby project in order to learn Go in combination with api design. By running the application you will be able to read, update and add new animals into your zoo database. Final product will be a docker container that can run on EC2 and will update a database in another docker container. 
 
 ### Steps:
-- [X] Create API design
+- [ ] Create API design
 - [X] Create working server
 - [X] Create working docker container
 - [ ] Implement all endpoints and return json
